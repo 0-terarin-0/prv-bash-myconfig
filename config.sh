@@ -47,6 +47,10 @@ sudo tic -xe alacritty,alacritty-direct extra/alacritty.info
 mkdir -p ${ZDOTDIR:-~}/.zsh_functions
 )
 
+# get zshtheme
+cd ~/.oh-my-zsh/themes
+wget https://raw.githubusercontent.com/0-terarin-0/prv-myconfig/refs/heads/main/mytheme.zsh-theme
+
 # Set .zshrc
 cd ~ ;rm -R ~/.zshrc
 cat <<EOF >> .zshrc
