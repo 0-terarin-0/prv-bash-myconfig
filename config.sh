@@ -4,7 +4,7 @@
 echo "Install ZSH"
 (
 required=(zsh curl wget git gh)
-pm=(brew apt yum port pacman)
+pm=(brew apt yum port pacman brew)
 
 for r in ${required[@]}; do
   if ! type ${r} >/dev/null 2>&1; then
