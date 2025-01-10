@@ -52,7 +52,7 @@ cd ~/.oh-my-zsh/themes
 wget https://raw.githubusercontent.com/0-terarin-0/prv-myconfig/refs/heads/main/mytheme.zsh-theme
 
 # Set .zshrc
-cd ~ ;rm -R ~/.zshrc
+cd ~ ;mv ~/.zshrc ~/.zshrc_old
 cat <<EOF >> .zshrc
 # Setting of Oh-My-ZSH
 export ZSH="$HOME/.oh-my-zsh"
