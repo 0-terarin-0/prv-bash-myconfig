@@ -14,6 +14,10 @@
 
 ## 利用方法
 
+```bash
+sh -c "$(wget https://raw.githubusercontent.com/0-terarin-0/prv-bash-myconfig/refs/heads/main/config.sh -O -)"
+```
+
 ## ライブラリ
 
 特にライブラリ等は使用していません。
