@@ -22,17 +22,6 @@ for r in ${required[@]}; do
   fi
 done
 )
-# Install Oh-My-Zsh
-echo "Install Oh-My-ZSH"
-(
-sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
-)
-
-# Install zsh-autosuggestion
-echo "Install zsh-autosuggestions"
-(
-git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
-)
 
 # Install rustup
 echo "Setup rustup"
@@ -45,6 +34,19 @@ git clone https://github.com/alacritty/alacritty.git
 cd alacritty
 sudo tic -xe alacritty,alacritty-direct extra/alacritty.info
 mkdir -p ${ZDOTDIR:-~}/.zsh_functions
+)
+
+
+# Install Oh-My-Zsh
+echo "Install Oh-My-ZSH"
+(
+sh -c "$(curl -fsSL https://raw.githubusercontent.com/ohmyzsh/ohmyzsh/master/tools/install.sh)"
+)
+
+# Install zsh-autosuggestion
+echo "Install zsh-autosuggestions"
+(
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
 )
 
 # get zshtheme
